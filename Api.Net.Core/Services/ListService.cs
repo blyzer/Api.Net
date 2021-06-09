@@ -38,7 +38,7 @@ namespace Api.Services
             var result = new ListResult
             {
                 Count = count,
-                Data = data.EmptyIfNull()
+                Data = data.EmptyIfNull().AsQueryable()
             };
 
             return result;
